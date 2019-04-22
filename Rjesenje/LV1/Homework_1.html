@@ -1,0 +1,385 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>1st homework</title>
+
+	<style>
+		* {
+
+			margin: 0;
+			padding: 0;
+
+		}
+
+		.nav-background {
+			position: sticky;
+			top: 0px;
+			background-color: #2d2d2d;
+			margin: 0;
+		}
+
+		nav h2 {
+			color: white;
+
+		}
+
+		nav img {
+			position: relative;
+			left: 120px;
+		}
+
+		ul#nav-unordered-list {
+			margin: 0;
+			list-style-type: none;
+			/*
+			position: relative;
+			top: -27px;
+			left: 1000px;
+			*/
+			float: right;
+			margin: 6px 20px 0px 0px;
+		}
+
+		ul#nav-unordered-list li {
+			margin: 0;
+			list-style-type: none;
+			display: inline;
+		}
+
+		.special-list {
+			list-style-type: none;
+		}
+
+		ul.special-list li a {
+			text-decoration: none;
+		}
+
+		/*
+		ul#nav-unordered-list li a {
+
+		}
+		*/
+		nav ul li {
+			display: block;
+			color: white;
+		}
+
+		nav ul li a {
+			color: white;
+			text-decoration: none;
+		}
+
+		.image-header {
+			max-width: 100%;
+			height: auto;
+		}
+
+		.center {
+			margin-top: 10px;
+			text-align: center;
+			font-family: sans-serif;
+
+		}
+
+		.center-hr {
+			position: relative;
+			width: 30%;
+			margin: 10px auto;
+		}
+
+		.center-hr-section {
+			position: relative;
+			width: 50%;
+			margin: 10px auto;
+		}
+
+		/* https://thoughtbot.com/blog/positioning */
+		.container {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			max-width: 100%;
+		}
+
+		.container-row {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			max-width: 100%;
+		}
+
+		.item {
+			max-width: 30%;
+			height: auto;
+			padding: 20px;
+		}
+
+		.text-justify {
+			text-align: justify;
+		}
+
+		.text-padding {
+			padding: 0 5px 0 5px;
+		}
+
+		/* https://stackoverflow.com/questions/19159977/inner-border-over-images-with-css */
+		img.clickable-picture:hover {
+			outline: 3px solid red;
+			outline-offset: -3px;
+		}
+
+		img.footer-clickable-picture:hover {
+			outline: 2px solid rgb(106, 192, 250);
+			outline-offset: 0;
+
+		}
+
+		.text-font {
+			font-family: Georgia, 'Times New Roman', Times, serif;
+			font-size: 1.1em;
+		}
+
+		.relative {
+			position: relative;
+			margin: 30px 0 0 0;
+		}
+
+		.subscribe-section {
+			background-color: #2d2d2d;
+			width: auto;
+			height: 150px;
+		}
+
+		.tour-booking-section {
+			background-color: #d1d1d1;
+			width: auto;
+		}
+
+		/* https://www.jotform.com/answers/154948-How-to-adjust-the-Text-Box-height-amp-width-and-also-the-font-height-inside-the-input-not-the-Text-Area-height- */
+		.form-input {
+			height: 25px !important;
+			width: 300px !important;
+			font-size: 14px !important;
+		}
+
+		.block-button-element {
+			padding: 15px;
+			display: block;
+			margin: 0 auto;
+			margin-top: 15px;
+			text-align: center;
+		}
+
+		.float-left {
+			float: left;
+		}
+
+		.float-right {
+			float: right;
+		}
+
+		.section-small {
+			background-color: #2d2d2d;
+			width: auto;
+			height: 20px;
+			color: whitesmoke;
+			padding: 10px;
+		}
+
+		.footer {
+			background-color: #afafaf;
+		}
+
+		.footer-icon-size {
+			width: 40px;
+			height: 40px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="nav-background">
+		<img src="./Assets/1614528.svg" alt="icon" width="50" height="40">
+		<ul id="nav-unordered-list">
+			<li> <a href="#">Homepage</a> |</li>
+			<li> <a href="#newsSection">News</a> |</li>
+			<li> <a href="#">Booking</a> |</li>
+			<li> <a href="#">About us</a> |</li>
+			<li> <a href="#">Contact</a> |</li>
+			<li> <a href="#">Account</a> </li>
+		</ul>
+	</nav>
+
+
+	<header>
+		<img class="image-header" src="./Assets/U6ta1Th.jpg" alt="picture">
+	</header>
+
+	<main>
+		<h1 class="center">Recent launches</h1>
+		<h2 class="center">Cutting edge of space technology</h2>
+		<hr class="center-hr">
+
+		<div class="container">
+			<div class="item"><img class="image-header" src="./Assets/dims.jpg" alt="picture"></div>
+			<div class="item"> <img class="image-header" src="./Assets/Falcon-Heavy-Feb-6th-2017-9960.jpg"
+					alt="picture"></div>
+			<div class="item"> <img class="image-header" src="./Assets/8116903920_e822cfdc91_k.jpg" alt="picture"></div>
+		</div>
+	</main>
+
+	<section id="newsSection">
+		<h1 class="center">News</h1>
+		<h2 class="center">Last month</h2>
+		<hr class="center-hr">
+
+		<div class="container">
+			<div class="item"> <a
+					href="https://www.nasa.gov/press-release/nasa-celebrates-earth-day-with-social-media-public-events"><img
+						class="image-header clickable-picture" src="./Assets/earth_day_union_station_2018.jpg"
+						alt="picture"> </a>
+				<p class="text-justify text-padding text-font">This Earth Day, April 22, NASA invites you to celebrate
+					our beautiful home planet by participating in a global social media event and local events around
+					the country.</p>
+			</div>
+			<div class="item"> <a
+					href="https://www.nasa.gov/press-release/next-space-station-crew-available-for-media-interviews"><img
+						class="image-header clickable-picture" src="./Assets/46619439334_41d6c01680_k.jpg"
+						alt="picture"> </a>
+				<p class="text-justify text-padding text-font">NASA astronaut Andrew Morgan, along with crewmates Luca
+					Parmitano of ESA (European Space Agency) and Alexander Skvortsov of the Russian space agency
+					Roscosmos, will discuss their upcoming mission to the International Space Station in a news
+					conference at 2 p.m. EDT, Friday, April 19,at NASA’s Johnson Space Center in Houston.</p>
+			</div>
+			<div class="item"> <a
+					href="https://www.nasa.gov/press-release/nasa-highlights-science-on-17th-spacex-resupply-mission-to-international-space-station">
+					<img class="image-header clickable-picture" src="./Assets/46151667255_3695e204d2_k.jpg"
+						alt="picture"> </a>
+				<p class="text-justify text-padding text-font">NASA will host a media teleconference at 11 a.m. EDT
+					Monday, April 22, to discuss select science investigations launching on the next SpaceX commercial
+					resupply flight to the International Space Station.</p>
+			</div>
+		</div>
+		<hr class="center-hr-section">
+	</section>
+
+	<section>
+		<h1 class="center">Upcoming launch</h1>
+		<h2 class="center">Baikonur, Kazakhstan</h2>
+		<hr class="center-hr">
+		<div class="container-row">
+			<div class="item relative">
+				<p class="text-justify text-padding text-font">Launch of Progress MS-12 cargo/resupply spacecraft
+					scheduled for July 31, 2019.
+
+					The Progress MS-12 spacecraft will carry about 2450 kg of cargo and supplies to the International
+					Space Station. The spacecraft will deliver food, fuel and supplies, including 705 kg of propellant,
+					50 kg of oxygen and air, 420 kg of water.
+
+					Documents are accepted up to June 30, 2019.
+
+					Tour cost: from 2450 Euro per pax.</p>
+			</div>
+			<div class="item">
+				<a href="http://baikonurtour.com/launches.html"><img class="image-header clickable-picture"
+						src="./Assets/a33.jpg" alt="picture"> </a>
+			</div>
+		</div>
+	</section>
+
+	<section class="subscribe-section">
+		<h2 class="center" style="color: beige; padding-top: 10px">Subscribe for newsletter</h2>
+		<form class="center" action="#">
+			<input class="form-input" type="email" name="email" placeholder="Please enter email address">
+			<input class="block-button-element" type="submit" value="Subscribe!" width="100">
+		</form>
+	</section>
+
+	<section class="tour-booking-section">
+		<div class="container-row">
+			<div class="item">
+				<form class="center" action="#">
+					<h1>Tour booking details</h1>
+
+					<label for="emailInput" class="center">Email</label>
+					<br>
+					<input class="center" type="email" id="emailInput">
+					<br>
+					<label for="description" class="center">Email body</label>
+					<br>
+					<textarea id="description" rows="15" cols="15"></textarea>
+
+					<input class="block-button-element" type="submit" value="Send email" width="100">
+				</form>
+			</div>
+			<div class="item">
+				<img class="image-header clickable-picture" src="./Assets/transformation-vabaerial_0.jpg" alt="picture">
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-small">
+		<div class="float-left" style="margin-left: 70px">
+			<p>Feel free to contact us</p>
+		</div>
+		<div class="float-right" style="margin-right: 70px">
+			<p>Global Space Travel Organization</p>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container" style="justify-content: space-around">
+			<div class="item">
+				<h3 class="center">Links</h1>
+					<div class="container">
+						<div class="item">
+							<ul class="special-list">
+								<li> <a href="">1. link</a></li>
+								<li> <a href="">2. link</a></li>
+								<li> <a href="">3. link</a></li>
+								<li> <a href="">4. link</a></li>
+								<li> <a href="">5. link</a></li>
+							</ul>
+						</div>
+						<div class="item">
+							<ul class="special-list">
+								<li> <a href="">6. link</a></li>
+								<li> <a href="">7. link</a></li>
+								<li> <a href="">8. link</a></li>
+
+							</ul>
+						</div>
+					</div>
+
+			</div>
+			<div class="item">
+				<div class="container" style="align-items: flex-end; margin-top: 200px;">
+					<p>&copy; Global Space Travel Organization</p>
+				</div>
+
+
+
+			</div>
+			<div class="item">
+				<div class="container">
+					<div class="item"> <img class="footer-icon-size footer-clickable-picture"
+							src="./Assets/facebook-logo.svg" alt="picture"> </div>
+					<div class="item"> <img class="footer-icon-size footer-clickable-picture"
+							src="./Assets/twitter-logo-silhouette.svg" alt="picture"> </div>
+					<div class="item"> <img class="footer-icon-size footer-clickable-picture"
+							src="./Assets/linkedin-logo.svg" alt="picture"> </div>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+
+</body>
+
+</html>
