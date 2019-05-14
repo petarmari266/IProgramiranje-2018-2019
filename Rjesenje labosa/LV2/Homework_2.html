@@ -1,0 +1,294 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2nd homework</title>
+
+
+    <link rel="stylesheet" href="./Homework_2.css">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- 
+    <nav class="nav-background">
+        <img src="./Assets/1614528.svg" alt="icon" width="50" height="40">
+        <ul id="nav-unordered-list">
+            <li> <a href="#">Homepage</a> |</li>
+            <li> <a href="#newsSection">News</a> |</li>
+            <li> <a href="#">Booking</a> |</li>
+            <li> <a href="#">About us</a> |</li>
+            <li> <a href="#">Contact</a> |</li>
+            <li> <a href="#">Account</a> </li>
+        </ul>
+	</nav>
+	-->
+
+
+    <nav class="top-nav">
+
+        <div class="logo">
+            <img src="./Assets/1614528.svg" alt="icon" width="50" height="40">
+        </div>
+
+
+        <div class="toggle">
+            <i id="menu" class="fa fa-bars menu"></i>
+        </div>
+
+        <ul class="nav-wrapper">
+            <!-- <li><img src="./Assets/1614528.svg" alt="icon" width="50" height="40"></li>-->
+            <li class="nav-item"> <a href="#" class="nav__link">Homepage</a></li>
+            <li class="nav-item"> <a href="#" class="nav__link">News</a></li>
+            <li class="nav-item"> <a href="#" class="nav__link">Booking</a></li>
+            <li class="nav-item"> <a href="#" class="nav__link">About us</a></li>
+            <li class="nav-item"> <a href="#" class="nav__link">Contact</a></li>
+            <li class="nav-item"> <a href="#" class="nav__link">Account</a></li>
+        </ul>
+
+        <script type="text/javascript">
+            document.getElementById("menu").addEventListener("click", function () {
+                console.log("klik");
+                var elementList = document.querySelector("ul.nav-wrapper").classList.toggle("active");
+
+                console.log(elementList);
+            });
+        </script>
+    </nav>
+
+
+    <header>
+        <div class="container-header">
+            <div class="row-header">
+                <div class="column-header column-12">
+                    <img class="image-header" src="./Assets/U6ta1Th.jpg" alt="picture">
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+    <main>
+
+
+        <h1 class="center">Recent launches</h1>
+        <h2 class="center">Cutting edge of space technology</h2>
+        <hr class="center-hr">
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="column column-4"><img class="image-header" src="./Assets/dims.jpg" alt="picture"></div>
+                <div class="column column-4"> <img class="image-header"
+                        src="./Assets/Falcon-Heavy-Feb-6th-2017-9960.jpg" alt="picture"></div>
+                <div class="column column-4"> <img class="image-header" src="./Assets/8116903920_e822cfdc91_k.jpg"
+                        alt="picture"></div>
+            </div>
+        </div>
+    </main>
+
+
+    <section id="newsSection">
+        <h1 class="center">News</h1>
+        <h2 class="center">Last month</h2>
+        <hr class="center-hr">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="column column-4">
+                    <a
+                        href="https://www.nasa.gov/press-release/nasa-celebrates-earth-day-with-social-media-public-events"><img
+                            class="image-header clickable-picture" src="./Assets/earth_day_union_station_2018.jpg"
+                            alt="picture"> </a>
+                    <p class="text-justify text-padding text-font">This Earth Day, April 22, NASA invites you to
+                        celebrate our beautiful home planet by participating in a global social media event and local
+                        events around the country.</p>
+                </div>
+                <div class="column column-4">
+                    <a href="https://www.nasa.gov/press-release/next-space-station-crew-available-for-media-interviews"><img
+                            class="image-header clickable-picture" src="./Assets/46619439334_41d6c01680_k.jpg"
+                            alt="picture"> </a>
+                    <p class="text-justify text-padding text-font">NASA astronaut Andrew Morgan, along with crewmates
+                        Luca Parmitano of ESA (European Space Agency) and Alexander Skvortsov of the Russian space
+                        agency Roscosmos, will discuss their upcoming mission to the International Space Station
+                        in a news conference at 2 p.m. EDT, Friday, April 19,at NASA’s Johnson Space Center in Houston.
+                    </p>
+                </div>
+                <div class="column column-4">
+                    <a
+                        href="https://www.nasa.gov/press-release/nasa-highlights-science-on-17th-spacex-resupply-mission-to-international-space-station">
+                        <img class="image-header clickable-picture" src="./Assets/46151667255_3695e204d2_k.jpg"
+                            alt="picture"> </a>
+                    <p class="text-justify text-padding text-font">NASA will host a media teleconference at 11 a.m. EDT
+                        Monday, April 22, to discuss select science investigations launching on the next SpaceX
+                        commercial resupply flight to the International Space Station.</p>
+                </div>
+
+            </div>
+        </div>
+        <hr class="center-hr-section">
+    </section>
+
+
+
+    <section>
+        <h1 class="center">Upcoming launch</h1>
+        <h2 class="center">Baikonur, Kazakhstan</h2>
+        <hr class="center-hr">
+        <div class="container">
+            <div class="row">
+                <div class="column column-4">
+                    <p class="text-justify text-padding text-font">Launch of Progress MS-12 cargo/resupply spacecraft
+                        scheduled for July 31, 2019. The Progress MS-12 spacecraft will carry about 2450 kg of cargo and
+                        supplies to the International Space Station. The spacecraft will deliver food, fuel and
+                        supplies, including 705 kg of propellant, 50 kg of oxygen and air, 420 kg of water. Documents
+                        are accepted up to June 30, 2019. Tour cost: from 2450 Euro per pax.</p>
+                </div>
+                <div class="column column-4">
+                    <a href="http://baikonurtour.com/launches.html"><img class="image-header clickable-picture"
+                            src="./Assets/a33.jpg" alt="picture" width="300" height="450"> </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="subscribe-section">
+        <h2 class="center" style="color: beige; padding-top: 10px">Subscribe for newsletter</h2>
+        <form class="center" action="#">
+            <input class="form-input" type="email" name="email" placeholder="Please enter email address">
+            <input class="block-button-element" type="submit" value="Subscribe!" width="100">
+        </form>
+    </section>
+
+
+
+
+    <section class="tour-booking-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="column column-3">
+                    <form class="center" action="#">
+                        <h1>Tour booking details</h1>
+
+                        <label for="emailInput" class="center">Email</label>
+                        <br>
+                        <input class="center" type="email" id="emailInput">
+                        <br>
+                        <label for="description" class="center">Email body</label>
+                        <br>
+                        <textarea id="description" rows="15" cols="15"></textarea>
+
+                        <input class="block-button-element" type="submit" value="Send email" width="100">
+                    </form>
+                </div>
+                <div class="column column-6">
+                        <img class="image-header clickable-picture center-image" src="./Assets/transformation-vabaerial_0.jpg" alt="picture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section-small">
+        <div class="container" style="background-color: #2d2d2d">
+            <div class="row">
+                <div class="column column-6"><p>Feel free to contact us</p></div>
+                <div class="column column-6"><p>Global Space Travel Organization</p></div>
+            </div>
+        </div>
+
+        <!-- 
+        <div class="float-left" style="margin-left: 70px">
+            <p>Feel free to contact us</p>
+        </div>
+        <div class="float-right" style="margin-right: 70px">
+            <p>Global Space Travel Organization</p>
+        </div>
+    -->
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="container" style="justify-content: space-around">
+            <div class="row">
+            
+            
+            <div class="column column-4">
+                <h3 class="center">Links</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="column column-2">
+                            <ul class="special-list">
+                                <li> <a href="">1. link</a></li>
+                                <li> <a href="">2. link</a></li>
+                                <li> <a href="">3. link</a></li>
+                                <li> <a href="">4. link</a></li>
+                                <li> <a href="">5. link</a></li>
+                            </ul>
+                        </div>
+                        <div class="column column-2">
+                            <ul class="special-list">
+                                <li> <a href="">6. link</a></li>
+                                <li> <a href="">7. link</a></li>
+                                <li> <a href="">8. link</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="column column-4">
+                <div class="container" style="align-items: flex-end; margin-top: 200px;">
+                    <p>&copy; Global Space Travel Organization</p>
+                </div>
+            </div>
+
+
+
+            <div class="column column-4">
+                <div class="container">
+                    <div class="row footer-margin-top">
+                            <div class="column column-2"> <img class="footer-icon-size footer-clickable-picture" src="./Assets/facebook-logo.svg" alt="picture"> </div>
+                            <div class="column column-2"> <img class="footer-icon-size footer-clickable-picture" src="./Assets/twitter-logo-silhouette.svg" alt="picture"> </div>
+                            <div class="column column-2"> <img class="footer-icon-size footer-clickable-picture" src="./Assets/linkedin-logo.svg" alt="picture"> </div>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+
+    </footer>
+
+
+
+</body>
+
+
+
+</html>

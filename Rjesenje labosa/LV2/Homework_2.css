@@ -1,0 +1,297 @@
+@font-face {
+    font-family: InconsolataCustom;
+    src: url(./Assets/fonts/Inconsolata-Regular.ttf) format('ttf')
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: content-box;
+    font-family: InconsolataCustom;
+}
+
+ul#nav-unordered-list {
+    margin: 0;
+    list-style-type: none;
+    float: right;
+    margin: 6px 20px 0px 0px;
+}
+
+.image-header {
+    max-width: 100%;
+}
+
+.center {
+    margin-top: 10px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.center-hr {
+    position: relative;
+    width: 30%;
+    margin: 10px auto;
+}
+
+.center-hr-section {
+    position: relative;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.item {
+    max-width: 30%;
+    height: auto;
+    padding: 20px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-padding {
+    padding: 0 5px 0 5px;
+}
+
+/* https://stackoverflow.com/questions/19159977/inner-border-over-images-with-css */
+
+img.clickable-picture:hover {
+    outline: 3px solid red;
+    outline-offset: -3px;
+}
+
+img.footer-clickable-picture:hover {
+    outline: 2px solid rgb(106, 192, 250);
+    outline-offset: 0;
+}
+
+.text-font {
+    font-family: InconsolataCustom;
+    font-size: 1.1rem;
+}
+
+.relative {
+    position: relative;
+    margin: 30px 0 0 0;
+}
+
+.subscribe-section {
+    background-color: #2d2d2d;
+    width: auto;
+    height: 150px;
+}
+
+.tour-booking-section {
+    background-color: #d1d1d1;
+    width: auto;
+}
+
+/* https://www.jotform.com/answers/154948-How-to-adjust-the-Text-Box-height-amp-width-and-also-the-font-height-inside-the-input-not-the-Text-Area-height- */
+
+.form-input {
+    height: 25px !important;
+    width: 300px !important;
+    font-size: 14px !important;
+    padding-left: 10px;
+}
+
+.block-button-element {
+    padding: 15px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.section-small {
+    background-color: #2d2d2d;
+    width: auto;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.footer {
+    background-color: #afafaf;
+}
+
+.footer-icon-size {
+    width: 40px;
+    height: 40px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 0px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 12px;
+}
+
+.row-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0;
+}
+
+.top-nav {
+    z-index: 1;
+    width: 100%;
+    background: #001f44;
+}
+
+ul.nav-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: end;
+}
+
+ul.nav-wrapper li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+ul.nav-wrapper li:hover {
+    background: #2d0736
+}
+
+ul.nav-wrapper li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.toggle {
+    width: 100%;
+    padding: 10px 20px;
+    background: #001f44;
+    text-align: right;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 30px;
+    display: none;
+}
+
+.nav__link {
+    display: block;
+    padding: 8px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.5s ease-out;
+    -webkit-transition: border-bottom-color 0.5s ease-out;
+}
+
+.nav__link:hover {
+    color: yellow;
+    border-bottom-color: yellow;
+}
+
+.column-2 {
+    flex: 0 0 16.666666%;
+    padding: 0 12px;
+    margin: 0 0 10px 0;
+}
+
+.column-3 {
+    flex: 0 0 33%;
+    padding: 0 12px;
+    margin: 0 0 10px 0;
+}
+
+.column-4 {
+    flex: 0 0 25%;
+    padding: 0 12px;
+    margin: 0 0 10px 0;
+}
+
+.column-5 {
+    flex: 0 0 41.666667%;
+    padding: 0 12px;
+    margin: 0 0 10px 0;
+}
+
+.column-6 {
+    flex: 0 0 50%;
+    padding: 0 12px;
+    margin: 0 0 10px 0;
+}
+
+.column-12 {
+    flex: 0 0 100%;
+    padding: 0 0px;
+    margin: 0 0 10px 0;
+}
+
+/* u vjezbi;  @media screen and (min-width: 768px) { */
+
+@media screen and (max-width: 768px) {
+    .column {
+        flex: 1 1 100%;
+        padding: 0 12px;
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+    .container-header {
+        width: 100%;
+        padding: 0 0;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+    .column-header {
+        flex: 1 1 100%;
+        margin: 0 0 0 0;
+        text-align: center;
+    }
+    .toggle {
+        display: block;
+    }
+    ul.nav-wrapper {
+        width: 100%;
+        display: none;
+    }
+    ul.nav-wrapper li {
+        display: block;
+        text-align: center;
+    }
+    ul.nav-wrapper.active {
+        display: block;
+    }
+    
+}
+
+.logo img {
+    float: left;
+    text-align: left;
+    padding-inline-start: 10px;
+    padding-top: 10px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.center-image {
+    margin-top: 10%;
+}
+
+.footer-margin-top {
+    margin-top: 10px;
+}
